@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animes, peliculas y valumenes de manga">
+    <title>Tienda Anime</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <div class="menu"> 
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <img src="images/car.svg" id="img-carrito" alt="carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <br>
+                                <a href="#" id="vaciar-carrito" class="botin">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                <img src="/images/menu.png" class="icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li class="submenu-productos">
+                            <a href="#proyectos">Productos</a>
+                            <ul id="animes">
+                                <li><a class="dbzs" href="#dragonball">Dragon Ball</a></li>
+                                <li><a class="naruto" href="#naruto">Naruto Shippuden</a></li>
+                                <li><a class="one-piece" href="#one-piece">One Piece</a></li>
+                                <li><a class="deku" href="#my-hero-academia">My Hero Academia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="carrusel-posicion">
+    <div class="carrusel">
+        <span style="--i:1;"><img src="images/carrusel-dbzs.jpg" alt="Imagen 1"></span>
+        <span style="--i:2;"><img src="images/carrusel-naruto.jpg" alt="Imagen 2"></span>
+        <span style="--i:3;"><img src="images/carrusel-one-piece.jpg" alt="Imagen 3"></span>
+        <span style="--i:4;"><img src="images/carrusel-my-hero-academy.jpg" alt="Imagen 4"></span>
+    </div>
+    </div>
+
+    <main class="products" id="lista-1">
+
+        <h1 class="titulo">Productos</h1>
+
+        <h1 class="dbzs" id="dragonball">Dragon Ball</h1>
+
+        <div class="product-content">
+
+            <div class="product" id="fondo">
+                <img src="images/batalladelosdioses.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Batalla de los Dioses</h3>
+                    <p>En Dragon Ball Z: La Batalla de los Dioses, Bills, el Dios 
+                        de la Destrucción, despierta de su largo sueño y busca al 
+                        legendario Super Saiyan Dios para enfrentarlo. Al llegar a 
+                        la Tierra, muestra su poder al destruir el castillo de la 
+                        Fundación y desafiar a los héroes. Goku se convierte en 
+                        Super Saiyan Dios mediante un ritual, pero aunque tiene una 
+                        dura batalla con Bills, no logra vencerlo completamente. Al 
+                        final, Bills decide no destruir la Tierra debido a su aprecio 
+                        por la comida y la compañía que ofrece el planeta. La amenaza 
+                        se disipa y los personajes regresan a su vida normal.
+                    </p>
+                    <p>Película</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="1">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/resufreezer.jpg" alt="">
+                <div class="product-txt">
+                    <h3>La Resurrección de Freezer</h3>
+                    <p>En Dragon Ball Z: La Resurrección de Freezer, Freezer es 
+                        revivido por sus seguidores con las esferas del dragón. 
+                        Enfurecido por su derrota previa, regresa al planeta 
+                        Tierra buscando venganza. Con su nueva forma dorada, 
+                        Freezer se enfrenta a Goku y Vegeta, quienes también han 
+                        alcanzado nuevos niveles de poder. La batalla es intensa 
+                        y, aunque Goku y Vegeta luchan con valentía, Freezer está 
+                        decidido a destruir el planeta. Al final, Goku derrota a 
+                        Freezer, pero el villano intenta su última jugada al lanzar 
+                        un ataque devastador. Goku lo detiene, y Freezer muere 
+                        nuevamente. La paz regresa a la Tierra una vez más.</p>
+                    <p>Película</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="2">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/broly.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Dragon Ball Super: Broly</h3>
+                    <p>En Dragon Ball Super: Broly, un poderoso guerrero 
+                        Saiyajin exiliado, es liberado de su planeta natal por 
+                        Paragus, su padre, quien busca venganza contra Vegeta y la 
+                        familia real Saiyajin. Broly, quien tiene un increíble poder 
+                        de transformación, es llevado a la Tierra para enfrentarse 
+                        a Goku y Vegeta. La batalla es épica, con Broly mostrando 
+                        un poder descomunal y transformándose en un legendario Super 
+                        Saiyajin. Goku y Vegeta luchan juntos y, al darse cuenta de
+                        que necesitan más fuerza para detenerlo, usan una técnica de 
+                        fusión para convertirse en Gogeta. Gogeta, con un poder 
+                        abrumador, finalmente derrota a Broly, quien, aunque derrotado, 
+                        es dejado con la opción de vivir y comenzar una nueva vida en 
+                        un planeta lejano, gracias a la intervención de los héroes.</p>
+                    <p>Película</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="3">agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br><br>
+        
+        <h1 class="naruto" id="naruto">Naruto Shippuden</h1>
+
+        <div class="product-content">
+
+            <div class="product" id="fondo">
+                <img src="images/naruto_63.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Naruto Shippuden <br> volumen 63</h3>
+                    <p>En el volumen 63 de Naruto, la trama avanza con una intensa 
+                        batalla en el mundo ninja. Naruto sigue enfrentando a Obito, 
+                        quien está decidido a llevar a cabo su plan de un mundo 
+                        controlado por la ilusión del Tsukuyomi Eterno. Naruto 
+                        intenta convencer a Obito de que hay una mejor manera de 
+                        vivir, apelando a su humanidad y a su pasado. Mientras tanto, 
+                        Sasuke también juega un papel crucial en la lucha, y la 
+                        batalla se torna cada vez más compleja con la intervención 
+                        de Madara y sus aliados. La estrategia de Naruto y el espíritu 
+                        inquebrantable de los personajes contrastan con la 
+                        desesperación y la oscuridad que Obito representa. El volumen 
+                        muestra la evolución de Naruto y sus amigos en su lucha por la 
+                        paz y la justicia en un mundo sumido en el caos.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="4">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/naruto_70.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Naruto Shippuden <br> volumen 70</h3>
+                    <p>En el volumen 70 de Naruto, el clímax de la serie se alcanza
+                        con la conclusión de la Cuarta Gran Guerra Ninja. Naruto y 
+                        Sasuke se enfrentan a Kaguya Otsutsuki, quien ha sido revivida 
+                        y busca apoderarse del mundo. Naruto y Sasuke, con la ayuda de 
+                        sus aliados, combaten a Kaguya, quien ha absorbido un inmenso 
+                        poder y está causando estragos. En la batalla final, Naruto y 
+                        Sasuke unen fuerzas con sus amigos y logran derrotar a Kaguya, 
+                        evitando una catástrofe global. Tras la guerra, Naruto continúa 
+                        con su sueño de convertirse en Hokage y construir un futuro 
+                        de paz para el mundo ninja, mientras que Sasuke busca redimir 
+                        sus acciones y encontrar su propio camino. El volumen culmina 
+                        con la resolución de las tramas y la promesa de un nuevo 
+                        comienzo para los personajes principales.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="5">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/naruto_72.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Naruto Shippuden <br> volumen 72</h3>
+                    <p>En el volumen 72 de Naruto, la serie llega a su conclusión. 
+                        Después de la épica batalla contra Kaguya Otsutsuki y la 
+                        derrota de Obito como el portador del poder del Zetsu, 
+                        Naruto y Sasuke tienen su enfrentamiento final en el Valle 
+                        del Fin. La batalla entre los dos antiguos amigos, ahora 
+                        rivales, simboliza sus diferencias de ideologías y objetivos. 
+                        Naruto busca unir al mundo ninja y llevar la paz, mientras que 
+                        Sasuke quiere destruir el sistema actual y crear uno nuevo bajo
+                        su propio control. Durante la pelea, ambos muestran el 
+                        crecimiento que han tenido a lo largo de la serie, 
+                        combinando sus habilidades y el poder de sus respectivos 
+                        sellos de chakra. Finalmente, Naruto logra convencer a 
+                        Sasuke de su visión de un mundo en paz, y los dos se 
+                        reconcilian. Sasuke acepta su rol en la nueva era de paz y 
+                        se compromete a trabajar desde las sombras para proteger el 
+                        mundo.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br><br>
+        
+        <h1 class="one-piece" id="one-piece">One Piece</h1>
+        
+        <div class="product-content">
+
+            <div class="product" id="fondo">
+                <img src="images/bigmon.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Arco de Big Mom</h3>
+                    <p>En el arco de Big Mom de One Piece, Luffy y su tripulación llegan 
+                        al archipiélago de Whole Cake Island, gobernado por la poderosa 
+                        y temida Yonkou Big Mom. El objetivo de Luffy es rescatar a Sanji, 
+                        quien ha sido forzado a comprometerse en un matrimonio con una de 
+                        las hijas de Big Mom, Pudding, como parte de un plan para unir 
+                        familias y consolidar el poder de la emperadora. Mientras los 
+                        Piratas de Sombrero de Paja se infiltran en el territorio de 
+                        Big Mom, enfrentan desafíos significativos, incluyendo a los temibles 
+                        subordinados de la emperadora y las trampas de la isla. Sanji 
+                        está atrapado entre sus deberes familiares y su lealtad a la 
+                        tripulación, y debe tomar decisiones difíciles. El arco también explora 
+                        la historia y motivaciones de Big Mom, mostrando su ambición desmedida 
+                        y su capacidad para manipular y controlar a quienes la rodean. La trama 
+                        se intensifica con grandes batallas y alianzas inesperadas, mientras 
+                        los personajes luchan por alcanzar sus objetivos en medio del caos y la 
+                        traición. Finalmente, la historia revela secretos importantes sobre la 
+                        familia de Sanji y las intrigas de la política mundial en el universo 
+                        de One Piece, estableciendo nuevas amenazas y desafíos para la tripulación.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/wano.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Arco del País de Wano</h3>
+                    <p>En el arco del País de Wano de One Piece, Luffy y su tripulación llegan 
+                        a Wano, un país aislado y dominado por el shogun Orochi y el emperador 
+                        Kaido, uno de los Cuatro Emperadores. Se enteran de la difícil situación 
+                        del país y se unen a los samuráis locales, liderados por Kin'emon y los 
+                        miembros del Clan Kozuki, quienes buscan derrocar a Orochi y Kaido. La 
+                        historia se divide en varias partes: la infiltración en Wano, el reclutamiento 
+                        de aliados y el desarrollo de los planes para la rebelión. Luffy y sus 
+                        amigos se enfrentan a varios desafíos, incluyendo enfrentamientos con los 
+                        subordinados de Kaido y la preparación para la batalla final. La trama 
+                        principal culmina en una épica batalla en Onigashima, donde los samuráis 
+                        y la tripulación de los Sombrero de Paja luchan contra las fuerzas de Kaido 
+                        y Orochi. Esta guerra es significativa, ya que revela la historia oculta 
+                        de Wano, la conexión de Kaido con los antiguos mitos y la importante alianza 
+                        entre Luffy y los samuráis. A medida que la batalla avanza, se producen giros 
+                        dramáticos y se exploran temas profundos relacionados con la libertad y el 
+                        legado de los personajes. El arco es crucial para el desarrollo de la 
+                        historia, ya que tiene un gran impacto en el futuro de la serie y ofrece 
+                        nuevas perspectivas sobre el mundo de One Piece.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/egghead.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Arco de Egghead</h3>
+                    <p>En el arco de Egghead de One Piece, Luffy y su tripulación llegan a la isla 
+                        Egghead, un lugar futurista y altamente tecnológico dirigido por el científico 
+                        Vegapunk. Egghead es conocida por su avanzado desarrollo en tecnología y ciencia, 
+                        y es un punto crucial en la búsqueda de Luffy por el One Piece. Durante su 
+                        estancia, el grupo se encuentra con Vegapunk y sus numerosos clones, cada uno 
+                        especializado en diferentes campos de la ciencia. La tripulación se involucra 
+                        en varios conflictos mientras descubren secretos sobre el pasado y las verdaderas 
+                        intenciones de Vegapunk, así como los oscuros experimentos que realiza. El arco 
+                        explora la influencia de la tecnología en el mundo de One Piece y presenta una 
+                        serie de desafíos para Luffy y su equipo, incluyendo enfrentamientos con los 
+                        marines y una posible amenaza de la Revolución Científica. A medida que la historia 
+                        avanza, se revelan detalles importantes sobre el poder de Vegapunk y su relación 
+                        con el Gobierno Mundial, preparando el escenario para futuros eventos significativos 
+                        en la serie.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        
+        <h1 class="deku" id="my-hero-academia">My Hero Academia</h1>
+        
+        <div class="product-content">
+
+            <div class="product" id="fondo">
+                <img src="images/volumen_33.jpg" alt="">
+                <div class="product-txt">
+                    <h3>My Hero Academia <br> volunen 33</h3>
+                    <p>En el volumen 33 de My Hero Academia, la historia se centra en los eventos 
+                        posteriores a la conclusión del arco de la "Guerra de la Libertad". La narrativa 
+                        profundiza en las secuelas del enfrentamiento entre los héroes y los villanos, 
+                        mostrando cómo la sociedad y los personajes principales se están recuperando de la 
+                        devastadora batalla. El volumen destaca las dificultades que enfrentan los personajes 
+                        principales mientras tratan de reponerse y reconstruir sus vidas. Deku (Izuku Midoriya) 
+                        y sus compañeros de clase se enfrentan a nuevos desafíos tanto en el ámbito heroico 
+                        como personal. También se exploran las consecuencias de las acciones de los villanos 
+                        y el impacto que han tenido en el equilibrio entre héroes y villanos. Se presentan 
+                        nuevos desarrollos en la trama, incluyendo las tensiones y las nuevas estrategias 
+                        que los héroes deben adoptar para lidiar con la creciente amenaza que representan los 
+                        villanos. El volumen también revela más detalles sobre el trasfondo de algunos 
+                        personajes y cómo sus decisiones afectarán el futuro del mundo en que viven.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/volumen_37.jpg" alt="">
+                <div class="product-txt">
+                    <h3>My Hero Academia <br> volunen 37</h3>
+                    <p>En el volumen 37 de My Hero Academia, la historia se adentra en la continuación de 
+                        los eventos posteriores al arco de la "Guerra de la Libertad". En este volumen, se sigue 
+                        explorando el impacto de la guerra en los héroes y la sociedad en general. Deku y sus 
+                        compañeros de clase están en un momento crucial de sus entrenamientos y desarrollo como 
+                        héroes. La narrativa muestra cómo cada uno de ellos enfrenta las consecuencias de los 
+                        eventos recientes y cómo intentan adaptarse a la nueva realidad del mundo heroico. Se 
+                        destaca el proceso de recuperación y el fortalecimiento de sus habilidades, así como 
+                        los desafíos emocionales y psicológicos que deben superar. El volumen también introduce 
+                        nuevos elementos en la trama, mostrando la evolución de los villanos y sus planes 
+                        futuros. La tensión sigue aumentando mientras los héroes se preparan para enfrentar 
+                        nuevas amenazas y consolidar sus roles en un mundo que ha cambiado drásticamente debido 
+                        a la guerra.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product" id="fondo">
+                <img src="images/Volumen_41.webp" alt="">
+                <div class="product-txt">
+                    <h3>My Hero Academia <br> volunen 41</h3>
+                    <p>En el volumen 41 de My Hero Academia, la trama sigue desarrollándose después del arco de la 
+                        "Guerra de la Libertad". En este volumen, el enfoque está en las secuelas del conflicto y 
+                        cómo los héroes y la sociedad están manejando el caos y el desorden resultantes. El volumen 
+                        se centra en el entrenamiento de los estudiantes de la UA, especialmente en el desarrollo 
+                        de sus habilidades y su preparación para enfrentar las nuevas amenazas que han surgido. 
+                        Los personajes principales, como Deku y sus compañeros, están profundizando en sus 
+                        habilidades y enfrentando desafíos tanto físicos como emocionales. Una parte importante 
+                        de la historia es el enfoque en los nuevos enemigos que han surgido tras la guerra. El 
+                        volumen explora más sobre sus motivaciones y cómo están influyendo en el nuevo orden del 
+                        mundo heroico. También se aborda cómo los héroes se están reorganizando y ajustando sus 
+                        estrategias para lidiar con estos nuevos peligros.</p>
+                    <p>Manga</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito botin" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="contacto">
+        <h1>Contactanos</h1>
+        <div>
+            <ul class="wrapper">
+                <li class="icon telefono">
+                    <span class="tooltip">9xx9xx9xx</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" viewBox="0 0 32 32" height="32" fill="none" class="svg-icon">
+                        <path 
+                            stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd">
+                        </path>
+                    </svg>
+                </li>
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <svg
+                  viewBox="0 0 320 512"
+                  height="1.2em"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <svg
+                  height="1.8em"
+                  fill="currentColor"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="twitter"
+                >
+                  <path
+                    d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1.2em"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+            
+        </div>
+        <p>© 2024 Tienda Virtual de Animes</p>
+    </footer>
+    <a href="#" class="scroll-to-top"><img src="images/flecha.webp" alt="flecha"></a>
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            var scrollButton = document.querySelector('.scroll-to-top');
+            
+            if (scrollPosition > 500) { 
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+        
+        document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
